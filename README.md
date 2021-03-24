@@ -48,7 +48,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      ### Live update
      - Will update all information relating to the last or cuurent state of the door, either by moblie browser or web browser.
        - ![web](media/Gif/site.gif)
-       - <img src="Gif/mobilesite.gif" width="38%" height="38%">
+       - <img src="media/Gif/mobilesite.gif" width="38%" height="38%">
    </details>
 
 3.  Google calendar API</br><details> 
