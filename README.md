@@ -15,7 +15,7 @@ Due to COVID-19, in early spring my internship was forced to transition into a r
    1. [High-Level State Diagram](https://github.com/KevyVo/wfh-security-system#high-level-state-diagram)
    2. [Low-Level Flowchart](https://github.com/KevyVo/wfh-security-system#low-level-flowchart)
    3. [User Table Interaction Diagram](https://github.com/KevyVo/wfh-security-system#user-table-interaction-diagram)
-   4. [File Struture Directory](https://github.com/KevyVo/wfh-security-system#file-struture-directory)
+   4. [File Structure Directory](https://github.com/KevyVo/wfh-security-system#file-structure-directory)
    5. [Custom Librarys](https://github.com/KevyVo/wfh-security-system#custom-libraries)
 5. [3D Printed Parts and CAD Model](https://github.com/KevyVo/wfh-security-system#3d-printed-parts-and-cad-model)
    1. [Front I/O](https://github.com/KevyVo/wfh-security-system#front-io)
@@ -477,7 +477,7 @@ You can download/enlarge the image by clicking on it.
 
 </details>
 
-### File Struture Directory
+### File Structure Directory
 ```
 wfh-security-system (root)
 ├───cad
