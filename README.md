@@ -139,7 +139,7 @@ Coming Soon
 <!--- [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE) -->
 
 Since this project is made up of cloud, electrical and software engineering. I have split up instructions into their own categories to make it easier to follow. 
-The React static site has it own seprate repo(link), which will appear again in the step below when needed.
+The React static site has it own separate [repo](https://github.com/KevyVo/wfh-serverless-site), which will appear again in the step below when needed.
 
 Please follow these sequence of instructions in **order** by clicking on the collapsable tabs:</br> **Click on any pictures/GIFs to enlarge them**
 
@@ -308,8 +308,9 @@ Please follow these sequence of instructions in **order** by clicking on the col
      <summary>Click for Static Site Instruction</summary>
      
      ### Static Site
-     Insert the website only side of the cloud digram here
-     1. Since the static repo had to be a different repo, I have tranfer the instruction for portion onto the static repo, insert link here
+     <img src="media/Images/Diagrams/Cloud/Final/cloud_site.PNG" width="75%" height="75%">
+
+     1. Since the static repo had to be a different repo, I have tranfer the instruction for portion onto the static [repo](https://github.com/KevyVo/wfh-serverless-site)
      2. Please return here after completion of the static site repo
      3. Congrats! If everything works, the only thing we still need to do is mount it onto our door. Move onto the Mounting instrutions
    </details>
