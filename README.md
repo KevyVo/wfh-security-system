@@ -210,7 +210,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
          + AWS is free if you stay below the free teir limit (we won`t even get close to hitting the limit in this project); AWS is also cheap for personal use if you go over the limit. 
       2. Setup a new IAM user- make sure to give programmatic access and console access and AdministratorAccess policy (you can add the appropriate policy if you know what you are doing)
          + <img src="media\Images\Screenshots\Create_user.png" width="75%" height="75%">
-         + ![policy](media\Images\Screenshots\userpolicy.png)
+         + ![policy](media\Images\Screenshots\user\userpolicy.png)
       3. Retrieve the credential for later use
       4. Open up the terminal on the Pi and enter:</br>```aws configure```
       5. Enter that AWS account credentional; please refer to the screenshot for futher assitance and [link](https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html)
