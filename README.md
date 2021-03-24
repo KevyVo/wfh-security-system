@@ -210,23 +210,23 @@ Please follow these sequence of instructions in **order** by clicking on the col
          + AWS is free if you stay below the free teir limit (we won`t even get close to hitting the limit in this project); AWS is also cheap for personal use if you go over the limit. 
       2. Setup a new IAM user- make sure to give programmatic access and console access and AdministratorAccess policy (you can add the appropriate policy if you know what you are doing)
          + <img src="media\Images\Screenshots\Create_user.png" width="75%" height="75%">
-         + ![policy](media\Images\Screenshots\user\userpolicy.png)
+         + ![policy](media/Images/Screenshots/user/userpolicy.png)
       3. Retrieve the credential for later use
       4. Open up the terminal on the Pi and enter:</br>```aws configure```
       5. Enter that AWS account credentional; please refer to the screenshot for futher assitance and [link](https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html)
-         + ![config](media\Images\Screenshots\config.png)
+         + ![config](media/Images/Screenshots/config.png)
      ### AWS Iot Core (PubSub)
       1.  We need to sign into the aws console and go to AWS Iot core
       2.  Go to Manage->Things->Regsister a thing
-          + ![things](media\Images\Screenshots\thingsboth2.png)
+          + ![things](media/Images/Screenshots/thingsboth2.png)
       3.  Click create a single thing and Give your thing name, scroll down and tap on the Next button and then you are immediately offered the one-click certificate generation option. An individual X.509 certificate per device is the recommended way of interacting with AWS IoT services from devices, offering the ability to burn the private key into the device upon enrolment that is then never transferred across the internet alongside requests, a security win. Download the certificate and private key for each device, and also a root CA. Make sure to hit that activate button so the certificate can be used. finish the process by clicking on the “Done” button.
           + ![cert](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Screenshots/real-time-door.png)
           + ![cert](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Screenshots/Create_things.png)
-          + ![cert](media\Images\Screenshots\AWS-IoT-core-Certificates-download.png)
+          + ![cert](media/Images/Screenshots/AWS-IoT-core-Certificates-download.png)
       4.  Next point is to create and attach a policy to the certificate, authorizing the authenticated device to perform IoT actions on IoT resources. for this tap on the “secure” tab from the AWS IoT menu which is on the left side, later go for the policies section. Now tap on the button named “Create” which is on the top right corner beside the iot-notifications Icon. give your policy name and fill the fields(Action, Resource ARN ) with a star “*” and check to Allow for Effect option then press the “create” button.
       5.  Now tap on the certificates section which is right above the policies section, You will see a certificate which you have created earlier, tap on the three dots and choose to attach the policy, a pop will come showing your existing policies, check on the recent policy that you have created and attach. That’s it you have successfully created a thing, generated a certificate and attached policy to it.
       6.  You can find the endpoint here
-          + ![endpoint](media\Images\Screenshots\endpoint.png)
+          + ![endpoint](media/Images/Screenshots/endpoint.png)
       7.  I recommend putting all the files/cerficates in the empty directory I premade called "Credtionals"
           + The endpoint can found here
       8.  Fill out the appropriate lines out with the correct pathing in the main.py</br>
@@ -241,52 +241,52 @@ Please follow these sequence of instructions in **order** by clicking on the col
             ```
       9.  We can test the if the pubsub is working using this script ```python only-pubsub.py```
       10. You should be able to see a Message sent on the ide or terminal when you scan your fingerprint or change the state of the door
-          + ![message](media\Images\Screenshots\pi_term.png)
+          + ![message](media/Images/Screenshots/pi_term.png)
       11. You can see the data be pushed to AWS Iot core buy going to AWS Iot Core->Test
           1.  Subcribe to topic(it the thingname filled out above)
           2.  Everything can be default
           3.  Hit Subscribe to topic
           4.  You should see a message send like this on your browser
-             + ![Test](media\Images\Screenshots\Test1.png)
+             + ![Test](media/Images/Screenshots/Test1.png)
      ### User Table interaction
      This diagram shows how the User table interacts with the main python script; to learn more about it click [here](https://github.com/KevyVo/Smart-Doorlock#user-table-interaction-diagram)</br>
       <img src="Images/Diagrams/Fingerprint/Fingerprint_lookup.png" width="75%" height="75%">
       - We are going to build this table in the following step
      ### AWS Dynamodb (Database)
       1. Navigate to AWS Dynamodb and make a new Table label: User
-         + ![user](media\Images\Screenshots\Create_user.png)
+         + ![user](media/Images/Screenshots/Create_user.png)
          + This will be the user database, for now you either have to setup the user using the python script or manually using these fields, I am working on add user using the react site on a future feature.
       2. Fill out the parameter of the table like this
-          +  ![para](media\Images\Screenshots\create_table_user.png)
+          +  ![para](media/Images/Screenshots/create_table_user.png)
           +  Make a diagram of how the user and the fingerprint and the main.py interact with each other
       3. Navgaite to AWS Iot Core->Act and Click on Create a rule
-         + ![create](media\Images\Screenshots\Create Rule.png)
+         + ![create](media/Images/Screenshots/Create Rule.png)
       4. Enter ```real-time-door``` for Name
-         + ![real](media\Images\Screenshots\real-time-door.png)
+         + ![real](media/Images/Screenshots/real-time-door.png)
       5. Under Rule query statement, choose the latest version from the Using SQL version list.</br>For Rule query statement, enter: ```SELECT * FROM `Smart_Lock` ```
-         + ![ts](media\Images\Screenshots\fill_rule.png)
+         + ![ts](media/Images/Screenshots/fill_rule.png)
       6. Click add Action
-         + ![add](media\Images\Screenshots\add_action.png)
+         + ![add](media/Images/Screenshots/add_action.png)
       7. On Select an action, choose to Insert a message into a DynamoDB table and then choose Configure action.
-          + ![db](media\Images\Screenshots\selectdb.png)
+          + ![db](media/Images/Screenshots/selectdb.png)
       8.  On Configure action, choose to create a new resource.
-          + ![Role](media\Images\Screenshots\create_role.png)
+          + ![Role](media/Images/Screenshots/create_role.png)
       9.  On the Amazon DynamoDB page, choose Create table.
       10. When creating the DynamoDB table, enter ```Users``` for table name. In Partition key, enter ```date```. Select Add sort key, and then enter ```unix``` in the Sort key field. Choose String for date (partition Key) and choose Number for unix (sort key) and then check Use Default settings.Now choose to Create as marked in the below screenshot.
           +  I would reccommend follow what I put exactly unless you know what you are doing because my script will being look for these exact key names
-          +  ![log](media\Images\Screenshots\create_logs.png)
+          +  ![log](media/Images/Screenshots/create_logs.png)
       11. It takes a few seconds to create your DynamoDB table. Close the browser tab where the Amazon DynamoDB console is open. If you don’t close the tab, your DynamoDB table is not displayed in the Table name list on the Configure action page of the AWS IoT console.
       12. On Configure action, First of all, refresh the resources by clicking on the refresh sign between the Table name drop down and Create a new resource button. Then choose your new table from the Table name list.
           + ![menu](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Screenshots/pull_down.PNG)
       13. In Create a new role, enter a unique name, and then choose to Create role.
-          + ![role](media\Images\Screenshots\create_newrole.png)
+          + ![role](media/Images/Screenshots/create_newrole.png)
       14. Choose Add action
       15. Choose Create rule.
       16. After the successful creation of the rule, you will see the following screenshot.
-          + ![rule](media\Images\Screenshots\Rule_overview.png)
+          + ![rule](media/Images/Screenshots/Rule_overview.png)
       17. To see if your AWS Iot Core has logged your events, you can go to AWS Dynamodb and click on the table you just created
       18. Click on items and you will see your last couple of messages that was sent from your pi
-          + ![logs](media\Images\Screenshots\logs.png)
+          + ![logs](media/Images/Screenshots/logs.png)
 
       ### E-mail alert
      **For right now this only work with G-mail account**
@@ -295,11 +295,11 @@ Please follow these sequence of instructions in **order** by clicking on the col
       3. Go to the main.py and replace the placeholder of the receving e-mail
       4. If this section was successful you shoud recieve e-mail only for 3 events
          1. Force Entry Dectection Triggered
-             + ![force](media\Images\Screenshots\Force.PNG)
+             + ![force](media/Images/Screenshots/Force.PNG)
          2. Correct fingerprint to deactivate the alarm
-             + ![reset](media\Images\Screenshots\Reset.PNG)
+             + ![reset](media/Images/Screenshots/Reset.PNG)
          3. Fail fingerprint with the fail printed attached to e-mail (In real e-mail the fingerprint would not be blurred)
-             + ![fail](media\Images\Screenshots\Failed.PNG)
+             + ![fail](media/Images/Screenshots/Failed.PNG)
    </details>
       &nbsp;&nbsp;&nbsp; <img src="https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Diagrams/Cloud/Final/SmartLock_Cloud.PNG" width="30%" height="30%">
    
@@ -326,7 +326,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
         1. Accessing your router using the browser
         2. A windows scanner called [Advanced IP Scanner](https://www.advanced-ip-scanner.com/)
         3. [Nmap](https://www.raspberrypi.org/documentation/remote-access/ip-address.md) scanning
-         + ![router](media\Images\Screenshots\Router.PNG)
+         + ![router](media/Images/Screenshots/Router.PNG)
      3. Make sure that all the lights have recognizeble names on your smartphone app
      4. Call the Hue bridge API by typing this into your browser, URL:</br>```http://<IP>/debug/clip.html``` Use the IP we retrieve above
      5. We need to create user to use the api
@@ -338,7 +338,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
            ```
         + <img src="media\Images\Screenshots\username.PNG" width="50%" height="50%">      
       1. Press the Hue bridge button, then in the following 30 seconds hit the POST button to run the query
-         + ![bridge](media\Images\philps_2.jpg)
+         + ![bridge](media/Images/philps_2.jpg)
       2. A username should now be generated; please record the username somewhere. We will need this information later.
       3. We will now call all the lights to idenify their names; this will ensure that both lights are connecting with the API
         + Fill in the parameter like this:</br>
@@ -378,16 +378,16 @@ Please follow these sequence of instructions in **order** by clicking on the col
      2. Navigate to google calendar and make a differnt calendar called Work
      3. Make a Fake meeting from now until four hours from now. 
        + The title has to contain the word Meeting in it and assign to the work calendar
-       + ![event](media\Images\Screenshots\Create_Meeting.png)
+       + ![event](media/Images/Screenshots/Create_Meeting.png)
      4. Click on this [link](https://developers.google.com/calendar/quickstart/python), You only need to do step one of the google guide by clicking the blue button: Enable the Google Calendar API
        + It will create a new Cloud Platform project and automatically enable the Google Calendar API and make a credentionals.json for us to use
-       + ![blue](media\Images\Screenshots\Google_api.png)
+       + ![blue](media/Images/Screenshots/Google_api.png)
      5. Navigate to the directoty and run Smart-Doorlock/G-Cal/gen_pickle.py
        + A window should appear to sign in and give authentican to this python file, it also geneerate a token for future uses
      6. Now we can run the final script
      7. Open a terminal and Navigate then run the file Smart_Doorlock/Src/main.py
        + I found that it runs smoother in the terminal for long term use
-       + ![term](media\Images\Screenshots\Cal_term.png)
+       + ![term](media/Images/Screenshots/Cal_term.png)
      8. The IO diplay should also know display a active meeting when motion is detected
        +  <img src="media\Images\meeting.jpg" width="75%" height="75%">
      9.  Congrats! The entire system works now, move onto Mounting instrutions
@@ -464,7 +464,7 @@ You can download/enlarge the image by clicking on it.
 ![Flow](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Diagrams/FlowChart/Flowchart.png)
 
 ### User Table Interaction Diagram
-![Table](media\Images\Diagrams\Fingerprint\Fingerprint_lookup.png)
+![Table](media/Images/Diagrams/Fingerprint/Fingerprint_lookup.png)
 <details>
   <summary>Click for explanation</summary>
   
