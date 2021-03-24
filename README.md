@@ -4,7 +4,7 @@
 Due to COVID-19, in early spring my internship was forced to transition into a remote and virtual experience. Whenever I had a meeting, my housemates would find ways to disturb me, whether by knocking loudly, or by walking in unannounced. I searched everywhere for a smartlock that would be able to alert people outside that I was in a meeting. Unfortunately, I could not find anything that fit all my needs. Fortunately, being the engineering student I am, I knew what I had to do. It was time to bring this idea into existince and build it myself. 
 
 <!--- ! This is the scanning picture [Project_Image](https://github.com/KevyVo/Smart-Doorlock/blob/table/Images/finger.jpg) -->
-![lock](Gif/calendar.gif)
+![lock](media\Gif\calendar.gif)
 
 ## Table of Contents
 
@@ -37,9 +37,9 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Override Trigger
      1. In the gif the main.py file is waiting for a trigger when the user want to diable the alarm system.
-        - ![unlock](Gif/unlock_override.gif)
+        - ![unlock](media\Gif\unlock_override.gif)
      2. In the gif the main.py file is waiting for a trigger when the user want to arm the alarm system.
-        - ![lock](Gif/lock_overide.gif)
+        - ![lock](media\Gif\lock_overide.gif)
    </details>
 
 2.  Live updates from serverless site</br><details> 
@@ -47,7 +47,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Live update
      - Will update all information relating to the last or cuurent state of the door, either by moblie browser or web browser.
-       - ![web](Gif/site.gif)
+       - ![web](media\Gif\site.gif)
        - <img src="Gif/mobilesite.gif" width="38%" height="38%">
    </details>
 
@@ -56,7 +56,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Google Calendar
      - This will read continously from your google work calendar and alert other outside your door not to distrub during these hours.
-       - ![google](Gif/calender2.gif)
+       - ![google](media\Gif\calender2.gif)
    </details>
 
 4.  Autonomous Motion Light/System Sensor</br><details> 
@@ -64,7 +64,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Light/System Sensor
      - The light and security system will turn on with motion and turn off after 5 mins of no activity. The sensor will work in the darkest condtions.
-       - ![dark](Gif/dark2.gif)
+       - ![dark](media\Gif\dark2.gif)
    </details>
 
 5.  Biometric Authentication</br><details> 
@@ -73,9 +73,9 @@ My work from home security system, aid in alot more ways then just a smart door 
      ### Fingerprint Scanner
      - Authenticate authorize user to gain access to the room with their pre-regsiter fingerprint, the light will also blink a certain colour depending on the assessment. It will also save any fail fingerprint on local storage for identifying potential unauthorized events.
        - Correct Fingerprint (Blink Green)
-       - ![correct](Gif/correct.gif)
+       - ![correct](media\Gif\correct.gif)
        - Incorrect Fingerprint (Blink Red)
-       - ![Incorrect](Gif/incorrect.gif)
+       - ![Incorrect](media\Gif\incorrect.gif)
    </details>
 
 6.  Excceded Timeout</br><details> 
@@ -83,7 +83,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Timeout
      - Will set a timeout of 5 mins after 3 continous authenication failures, every addtion failure will be (timeout= tries * 5 mins). This will reset after one correct authernication. It will also save any fail fingerprint on local storage for identifying potential unauthorized events.
-       - ![timeout](Gif/timeout.gif)
+       - ![timeout](media\Gif\timeout.gif)
    </details>
 
 7.  Forced Entry Detection</br><details> 
@@ -91,7 +91,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Forced Entry Detection
      - Will sound an alarm once the door is open with any proper autheication or break in. The alarm will only turn off once a authenticated fingerprint has reset the alarm.
-       - ![fsd](Gif/fed.gif)
+       - ![fsd](media\Gif\fed.gif)
    </details>
 
 8.  E-mail alerts</br><details> 
@@ -100,11 +100,11 @@ My work from home security system, aid in alot more ways then just a smart door 
      ### Alerts
      - There are 3 events that will send e-mails on
       1. Force Entry Dectection Triggered
-          + ![force](Images/Screenshots/Force.PNG)
+          + ![force](media\Images\Screenshots\Force.PNG)
       2. Correct fingerprint to deactivate the alarm
-          + ![reset](Images/Screenshots/Reset.PNG)
+          + ![reset](media\Images\Screenshots\Reset.PNG)
       3. Fail fingerprint with the fail printed attached to e-mail (In real e-mail the fingerprint would not be blurred)
-          + ![fail](Images/Screenshots/Failed.PNG)
+          + ![fail](media\Images\Screenshots\Failed.PNG)
    </details>
 
 9.  Logging events into database</br><details> 
@@ -120,7 +120,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Logging
      - Red and Green light will blink simultaneously if there is motion on the other side of the door.
-       - ![motiond](Gif/omotion.gif)
+       - ![motiond](media\Gif\omotion.gif)
    </details>
 
 11.  Daytime/Nightime Mode</br><details> 
@@ -129,7 +129,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      ### Sound Change
      1.  8AM - 8PM the alarm buzzer will make sound when in use
      2.  8PM - 8AM the alarm buzzer will be disable for nightime use
-         - ![dn](Images/Daynight.png)
+         - ![dn](media\Images\Daynight.png)
    </details>
 
 ## Installation/Instructions
@@ -182,13 +182,13 @@ Please follow these sequence of instructions in **order** by clicking on the col
      3. Run the file either in the terminal or ide
         + Congrats! Your fingerprint has been enrolled locally to the system
      4. When connecting the dupoint connectors, make sure you can disconnect the male to female cable apart. This will be useful for mounting installtion later.
-        + <img src="Images/Connected_separted.jpg" width="75%" height="75%">
-        + <img src="Images/Connected_label.jpg" width="75%" height="75%">
+        + <img src="media\Images\Connected_separted.jpg" width="75%" height="75%">
+        + <img src="media\Images\Connected_label.jpg" width="75%" height="75%">
      5. Label all cables like this; it make the rewiring installtion easier later on
-        + <img src="Images/label_close.jpg" width="75%" height="75%">
+        + <img src="media\Images\label_close.jpg" width="75%" height="75%">
      6. Connect and solder all the electical connections using this diagram and connection tables found here
         + RECOMMENDED: I personally connect all the connections and components on a protyping breadboard before moving onto the solderable PCB
-        + <img src="Images/BB.jpg" width="75%" height="75%">
+        + <img src="media\Images\BB.jpg" width="75%" height="75%">
         + Run the script ```non-cloud base script```
      7. Run the non cloud base script, to test how all the components will work all together
         + If you see any warnings that do not effect your program, just ignore them for now
@@ -209,24 +209,24 @@ Please follow these sequence of instructions in **order** by clicking on the col
          + Follow this [guide](https://docs.aws.amazon.com/polly/latest/dg/setting-up.html) for help if needed 
          + AWS is free if you stay below the free teir limit (we won`t even get close to hitting the limit in this project); AWS is also cheap for personal use if you go over the limit. 
       2. Setup a new IAM user- make sure to give programmatic access and console access and AdministratorAccess policy (you can add the appropriate policy if you know what you are doing)
-         + <img src="Images/Screenshots/Create_user.png" width="75%" height="75%">
-         + ![policy](Images/Screenshots/userpolicy.png)
+         + <img src="media\Images\Screenshots\Create_user.png" width="75%" height="75%">
+         + ![policy](media\Images\Screenshots\userpolicy.png)
       3. Retrieve the credential for later use
       4. Open up the terminal on the Pi and enter:</br>```aws configure```
       5. Enter that AWS account credentional; please refer to the screenshot for futher assitance and [link](https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html)
-         + ![config](Images/Screenshots/config.png)
+         + ![config](media\Images\Screenshots\config.png)
      ### AWS Iot Core (PubSub)
       1.  We need to sign into the aws console and go to AWS Iot core
       2.  Go to Manage->Things->Regsister a thing
-          + ![things](Images/Screenshots/thingsboth2.png)
+          + ![things](media\Images\Screenshots\thingsboth2.png)
       3.  Click create a single thing and Give your thing name, scroll down and tap on the Next button and then you are immediately offered the one-click certificate generation option. An individual X.509 certificate per device is the recommended way of interacting with AWS IoT services from devices, offering the ability to burn the private key into the device upon enrolment that is then never transferred across the internet alongside requests, a security win. Download the certificate and private key for each device, and also a root CA. Make sure to hit that activate button so the certificate can be used. finish the process by clicking on the “Done” button.
           + ![cert](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Screenshots/real-time-door.png)
           + ![cert](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Screenshots/Create_things.png)
-          + ![cert](Images/Screenshots/AWS-IoT-core-Certificates-download.png)
+          + ![cert](media\Images\Screenshots\AWS-IoT-core-Certificates-download.png)
       4.  Next point is to create and attach a policy to the certificate, authorizing the authenticated device to perform IoT actions on IoT resources. for this tap on the “secure” tab from the AWS IoT menu which is on the left side, later go for the policies section. Now tap on the button named “Create” which is on the top right corner beside the iot-notifications Icon. give your policy name and fill the fields(Action, Resource ARN ) with a star “*” and check to Allow for Effect option then press the “create” button.
       5.  Now tap on the certificates section which is right above the policies section, You will see a certificate which you have created earlier, tap on the three dots and choose to attach the policy, a pop will come showing your existing policies, check on the recent policy that you have created and attach. That’s it you have successfully created a thing, generated a certificate and attached policy to it.
       6.  You can find the endpoint here
-          + ![endpoint](Images/Screenshots/endpoint.png)
+          + ![endpoint](media\Images\Screenshots\endpoint.png)
       7.  I recommend putting all the files/cerficates in the empty directory I premade called "Credtionals"
           + The endpoint can found here
       8.  Fill out the appropriate lines out with the correct pathing in the main.py</br>
@@ -241,52 +241,52 @@ Please follow these sequence of instructions in **order** by clicking on the col
             ```
       9.  We can test the if the pubsub is working using this script ```python only-pubsub.py```
       10. You should be able to see a Message sent on the ide or terminal when you scan your fingerprint or change the state of the door
-          + ![message](Images/Screenshots/pi_term.png)
+          + ![message](media\Images\Screenshots\pi_term.png)
       11. You can see the data be pushed to AWS Iot core buy going to AWS Iot Core->Test
           1.  Subcribe to topic(it the thingname filled out above)
           2.  Everything can be default
           3.  Hit Subscribe to topic
           4.  You should see a message send like this on your browser
-             + ![Test](Images/Screenshots/Test1.png)
+             + ![Test](media\Images\Screenshots\Test1.png)
      ### User Table interaction
      This diagram shows how the User table interacts with the main python script; to learn more about it click [here](https://github.com/KevyVo/Smart-Doorlock#user-table-interaction-diagram)</br>
       <img src="Images/Diagrams/Fingerprint/Fingerprint_lookup.png" width="75%" height="75%">
       - We are going to build this table in the following step
      ### AWS Dynamodb (Database)
       1. Navigate to AWS Dynamodb and make a new Table label: User
-         + ![user](Images/Screenshots/Create_user.png)
+         + ![user](media\Images\Screenshots\Create_user.png)
          + This will be the user database, for now you either have to setup the user using the python script or manually using these fields, I am working on add user using the react site on a future feature.
       2. Fill out the parameter of the table like this
-          +  ![para](Images/Screenshots/create_table_user.png)
+          +  ![para](media\Images\Screenshots\create_table_user.png)
           +  Make a diagram of how the user and the fingerprint and the main.py interact with each other
       3. Navgaite to AWS Iot Core->Act and Click on Create a rule
-         + ![create](Images/Screenshots/Create%20Rule.png)
+         + ![create](media\Images\Screenshots\Create Rule.png)
       4. Enter ```real-time-door``` for Name
-         + ![real](Images/Screenshots/real-time-door.png)
+         + ![real](media\Images\Screenshots\real-time-door.png)
       5. Under Rule query statement, choose the latest version from the Using SQL version list.</br>For Rule query statement, enter: ```SELECT * FROM `Smart_Lock` ```
-         + ![ts](Images/Screenshots/fill_rule.png)
+         + ![ts](media\Images\Screenshots\fill_rule.png)
       6. Click add Action
-         + ![add](Images/Screenshots/add_action.png)
+         + ![add](media\Images\Screenshots\add_action.png)
       7. On Select an action, choose to Insert a message into a DynamoDB table and then choose Configure action.
-          + ![db](Images/Screenshots/selectdb.png)
+          + ![db](media\Images\Screenshots\selectdb.png)
       8.  On Configure action, choose to create a new resource.
-          + ![Role](Images/Screenshots/create_role.png)
+          + ![Role](media\Images\Screenshots\create_role.png)
       9.  On the Amazon DynamoDB page, choose Create table.
       10. When creating the DynamoDB table, enter ```Users``` for table name. In Partition key, enter ```date```. Select Add sort key, and then enter ```unix``` in the Sort key field. Choose String for date (partition Key) and choose Number for unix (sort key) and then check Use Default settings.Now choose to Create as marked in the below screenshot.
           +  I would reccommend follow what I put exactly unless you know what you are doing because my script will being look for these exact key names
-          +  ![log](Images/Screenshots/create_logs.png)
+          +  ![log](media\Images\Screenshots\create_logs.png)
       11. It takes a few seconds to create your DynamoDB table. Close the browser tab where the Amazon DynamoDB console is open. If you don’t close the tab, your DynamoDB table is not displayed in the Table name list on the Configure action page of the AWS IoT console.
       12. On Configure action, First of all, refresh the resources by clicking on the refresh sign between the Table name drop down and Create a new resource button. Then choose your new table from the Table name list.
           + ![menu](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Screenshots/pull_down.PNG)
       13. In Create a new role, enter a unique name, and then choose to Create role.
-          + ![role](Images/Screenshots/create_newrole.png)
+          + ![role](media\Images\Screenshots\create_newrole.png)
       14. Choose Add action
       15. Choose Create rule.
       16. After the successful creation of the rule, you will see the following screenshot.
-          + ![rule](Images/Screenshots/Rule_overview.png)
+          + ![rule](media\Images\Screenshots\Rule_overview.png)
       17. To see if your AWS Iot Core has logged your events, you can go to AWS Dynamodb and click on the table you just created
       18. Click on items and you will see your last couple of messages that was sent from your pi
-          + ![logs](Images/Screenshots/logs.png)
+          + ![logs](media\Images\Screenshots\logs.png)
 
       ### E-mail alert
      **For right now this only work with G-mail account**
@@ -295,11 +295,11 @@ Please follow these sequence of instructions in **order** by clicking on the col
       3. Go to the main.py and replace the placeholder of the receving e-mail
       4. If this section was successful you shoud recieve e-mail only for 3 events
          1. Force Entry Dectection Triggered
-             + ![force](Images/Screenshots/Force.PNG)
+             + ![force](media\Images\Screenshots\Force.PNG)
          2. Correct fingerprint to deactivate the alarm
-             + ![reset](Images/Screenshots/Reset.PNG)
+             + ![reset](media\Images\Screenshots\Reset.PNG)
          3. Fail fingerprint with the fail printed attached to e-mail (In real e-mail the fingerprint would not be blurred)
-             + ![fail](Images/Screenshots/Failed.PNG)
+             + ![fail](media\Images\Screenshots\Failed.PNG)
    </details>
       &nbsp;&nbsp;&nbsp; <img src="https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Diagrams/Cloud/Final/SmartLock_Cloud.PNG" width="30%" height="30%">
    
@@ -313,7 +313,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
      2. Please return here after completion of the static site repo
      3. Congrats! If everything works, the only thing we still need to do is mount it onto our door. Move onto the Mounting instrutions
    </details>
-        &nbsp;&nbsp;&nbsp; <img src="Images\Screenshots\react_phone.png" width="20%" height="20%">
+        &nbsp;&nbsp;&nbsp; <img src="media\Images\Screenshots\react_phone.png" width="20%" height="20%">
 
 5.  <details>
      <summary>Click for Smart Lights Instruction</summary>
@@ -321,12 +321,12 @@ Please follow these sequence of instructions in **order** by clicking on the col
      ### Smart Light Control
      As of now, this device is only compatiable with Philips Hue Lights (mention in Material list)
      1. The lights and Hue bridge should be installed normally with the regular instrutions
-        + <img src="Images\hue.jpg" width="35%" height="35%"> 
+        + <img src="media\Images\hue.jpg" width="35%" height="35%"> 
      2. You know need to find what is the Hue bridge IP address, there are a couple method on how to find this ip:
         1. Accessing your router using the browser
         2. A windows scanner called [Advanced IP Scanner](https://www.advanced-ip-scanner.com/)
         3. [Nmap](https://www.raspberrypi.org/documentation/remote-access/ip-address.md) scanning
-         + ![router](Images/Screenshots/Router.PNG)
+         + ![router](media\Images\Screenshots\Router.PNG)
      3. Make sure that all the lights have recognizeble names on your smartphone app
      4. Call the Hue bridge API by typing this into your browser, URL:</br>```http://<IP>/debug/clip.html``` Use the IP we retrieve above
      5. We need to create user to use the api
@@ -336,9 +336,9 @@ Please follow these sequence of instructions in **order** by clicking on the col
            Message Body:
             {"devicetype":"TestApp#RaspberryPi"}
            ```
-        + <img src="Images/Screenshots/username.PNG" width="50%" height="50%">      
+        + <img src="media\Images\Screenshots\username.PNG" width="50%" height="50%">      
       1. Press the Hue bridge button, then in the following 30 seconds hit the POST button to run the query
-         + ![bridge](Images/philps_2.jpg)
+         + ![bridge](media\Images\philps_2.jpg)
       2. A username should now be generated; please record the username somewhere. We will need this information later.
       3. We will now call all the lights to idenify their names; this will ensure that both lights are connecting with the API
         + Fill in the parameter like this:</br>
@@ -348,7 +348,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
           ```
       4. Press the GET button
          + On successful response you should see the names of each light 
-         + <img src="Images/Screenshots/lights.PNG" width="50%" height="50%"> 
+         + <img src="media\Images\Screenshots\lights.PNG" width="50%" height="50%"> 
       5.  One last test is to turn off one of the lights
          + Fill ther parameter like this:</br>
            ```
@@ -358,17 +358,17 @@ Please follow these sequence of instructions in **order** by clicking on the col
            ```
       6.  Press the PUT Button
           + On a successfull call you should see your light switch off
-          + <img src="Images\Screenshots\turn_off.PNG" width="50%" height="50%"> 
+          + <img src="media\Images\Screenshots\turn_off.PNG" width="50%" height="50%"> 
       7.  Navigate to ```Smart-Doorlock/Classes/lock_lib.py```
       8.  Open the file in a IDE and replace the placeholder #IP Address with the IP of the Hue bridge 
       9.  Save and close the file
       10. Run the python file ```Smart-doorlock/Test/Smartlightmain.py``` in the terminal
       11. Try unlocking and Locking your door using your fingerprint.<br>The light should flash green on successful fingerprint authention and flash red on incorrect fingerprint
-          + <img src="Images/Acess.jpg" width="70%" height="70%"> 
-          + <img src="Images/Red_fail.jpg" width="70%" height="70%">
+          + <img src="media\Images\Acess.jpg" width="70%" height="70%"> 
+          + <img src="media\Images\Red_fail.jpg" width="70%" height="70%">
       12. If the lights work properly with the python file, move on to the Google Calendar Instructions
    </details>
-        &nbsp;&nbsp;&nbsp; <img src="Images\Brands\PhilipsHuePanel.jpg" width="20%" height="20%">
+        &nbsp;&nbsp;&nbsp; <img src="media\Images\Brands\PhilipsHuePanel.jpg" width="20%" height="20%">
 
 6.  <details>
      <summary>Click for Google Calendar Instruction</summary>
@@ -378,63 +378,63 @@ Please follow these sequence of instructions in **order** by clicking on the col
      2. Navigate to google calendar and make a differnt calendar called Work
      3. Make a Fake meeting from now until four hours from now. 
        + The title has to contain the word Meeting in it and assign to the work calendar
-       + ![event](Images/Screenshots/Create_Meeting.png)
+       + ![event](media\Images\Screenshots\Create_Meeting.png)
      4. Click on this [link](https://developers.google.com/calendar/quickstart/python), You only need to do step one of the google guide by clicking the blue button: Enable the Google Calendar API
        + It will create a new Cloud Platform project and automatically enable the Google Calendar API and make a credentionals.json for us to use
-       + ![blue](Images/Screenshots/Google_api.png)
+       + ![blue](media\Images\Screenshots\Google_api.png)
      5. Navigate to the directoty and run Smart-Doorlock/G-Cal/gen_pickle.py
        + A window should appear to sign in and give authentican to this python file, it also geneerate a token for future uses
      6. Now we can run the final script
      7. Open a terminal and Navigate then run the file Smart_Doorlock/Src/main.py
        + I found that it runs smoother in the terminal for long term use
-       + ![term](Images/Screenshots/Cal_term.png)
+       + ![term](media\Images\Screenshots\Cal_term.png)
      8. The IO diplay should also know display a active meeting when motion is detected
-       +  <img src="Images/meeting.jpg" width="75%" height="75%">
+       +  <img src="media\Images\meeting.jpg" width="75%" height="75%">
      9.  Congrats! The entire system works now, move onto Mounting instrutions
    </details>
-        &nbsp;&nbsp;&nbsp; <img src="Images\Brands\calendar.jpg" width="20%" height="20%">
+        &nbsp;&nbsp;&nbsp; <img src="media\Images\Brands\calendar.jpg" width="20%" height="20%">
 
 7.  <details>
      <summary>Click for Assembly and Mounting Instruction</summary>
      
      ### Assembly
      1. Insert the all components to the front IO like this
-      + <img src="Images/welcome.jpg" width="60%" height="60%">
-      + <img src="Images/inside_glue.jpg" width="50%" height="50%">
+      + <img src="media\Images\welcome.jpg" width="60%" height="60%">
+      + <img src="media\Images\inside_glue.jpg" width="50%" height="50%">
      2. Use the hot glue gun to keep everything secure, be careful not to touch the 3d print. The heat will burn/damage the print.
-      + <img src="Images/fan.jpg" width="50%" height="50%">
+      + <img src="media\Images\fan.jpg" width="50%" height="50%">
      3. Attach the PCB to the base plate of the door mount
-      + <img src="Images/base_attach.jpg" width="50%" height="50%">
+      + <img src="media\Images\base_attach.jpg" width="50%" height="50%">
      4. Attach all the components to the back of the IO like this
-      + <img src="Images/both.jpg" width="50%" height="50%">
+      + <img src="media\Images\both.jpg" width="50%" height="50%">
      5. Drill 3 holes on the cover 
      6. Put the 3 x M3 bolts and nuts to secure cover to the base by using the hinge
-      + <img src="Images/hardware.jpg" width="50%" height="50%">
-      + <img src="Images/hinge.jpg" width="50%" height="50%">
+      + <img src="media\Images\hardware.jpg" width="50%" height="50%">
+      + <img src="media\Images\hinge.jpg" width="50%" height="50%">
    
      ### Mounting
      1. Pick a spot where you like the housing to be placed and drill a 1/4 inch hole 
-        + <img src="Images/Hole.jpg" width="50%" height="50%">
+        + <img src="media\Images\Hole.jpg" width="50%" height="50%">
      2. Mount the Front IO to the door using the 4x10mm serews
-        + <img src="Images/open6.jpg" width="50%" height="50%">
+        + <img src="media\Images\open6.jpg" width="50%" height="50%">
      3.  Mount the reed switch to top of the door
-     4. + <img src="Images/Reed.jpg" width="50%" height="50%">
+     4. + <img src="media\Images\Reed.jpg" width="50%" height="50%">
      5.  Connect the reed pin to the pi
      6.  Mount the electromagent to the top of the door 
-         + <img src="Images/eLock.jpg" width="50%" height="50%">
+         + <img src="media\Images\eLock.jpg" width="50%" height="50%">
      7.  Connect the electromagent to the relay
         + WARNING: be careful using a electromagnet, these magnet can seriously hurt you due to the crushing magnetic attraction force
      8.  Attach the Front mounting base to the other side of door and use a level to ensure that it is straight
-         <img src="Images/level.jpg" width="50%" height="50%">
+         <img src="media\Images\level.jpg" width="50%" height="50%">
      9.  Route the wires through the hole and push the cover onto base until flush with the door
-         <img src="Images/flush.jpg" width="50%" height="50%">
+         <img src="media\Images\flush.jpg" width="50%" height="50%">
      10. Reconnect the wires using the labels from earlier
-          + <img src="Images/sheet.jpg" width="50%" height="50%">
+          + <img src="media\Images\sheet.jpg" width="50%" height="50%">
           + I recommend taping a printed sheet of the GPIO to the door while wiring as a reference. This makes it so much easier.
-          + <img src="Images/tape.jpg" width="50%" height="50%">
+          + <img src="media\Images\tape.jpg" width="50%" height="50%">
      11. Connect the Power to usb c on the pi(For now the power will be deliver from the wall, I am looking to making a long lasting battery solution.)
      12. Close the lid, the magnets will attach onto the metal serews holding onto the door
-         <img src="Gif\back_loop.gif" width="50%" height="50%">
+         <img src="media\Gif\back_loop.gif" width="50%" height="50%">
      13. Plug in the electromagent power
      14. VNC or SSH into the pi and run the file ```Smart-doorlock/main.py``` in the terminal
      15. Congrats! You have just join the advanced smart security system club. No more bursting into your room!
@@ -464,7 +464,7 @@ You can download/enlarge the image by clicking on it.
 ![Flow](https://github.com/KevyVo/Smart-Doorlock/blob/master/Images/Diagrams/FlowChart/Flowchart.png)
 
 ### User Table Interaction Diagram
-![Table](Images/Diagrams/Fingerprint/Fingerprint_lookup.png)
+![Table](media\Images\Diagrams\Fingerprint\Fingerprint_lookup.png)
 <details>
   <summary>Click for explanation</summary>
   
