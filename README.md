@@ -210,7 +210,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
          + AWS is free if you stay below the free teir limit (we won`t even get close to hitting the limit in this project); AWS is also cheap for personal use if you go over the limit. 
       2. Setup a new IAM user- make sure to give programmatic access and console access and AdministratorAccess policy (you can add the appropriate policy if you know what you are doing)
          + <img src="media\Images\Screenshots\Create_user.png" width="75%" height="75%">
-         + ![policy](media/Images/Screenshots/user/userpolicy.png)
+         + ![policy](media/Images/Screenshots/userpolicy.png)  
       3. Retrieve the credential for later use
       4. Open up the terminal on the Pi and enter:</br>```aws configure```
       5. Enter that AWS account credentional; please refer to the screenshot for futher assitance and [link](https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html)
@@ -250,7 +250,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
              + ![Test](media/Images/Screenshots/Test1.png)
      ### User Table interaction
      This diagram shows how the User table interacts with the main python script; to learn more about it click [here](https://github.com/KevyVo/Smart-Doorlock#user-table-interaction-diagram)</br>
-      <img src="Images/Diagrams/Fingerprint/Fingerprint_lookup.png" width="75%" height="75%">
+      <img src="media/Images/Diagrams/Fingerprint/Fingerprint_lookup.png" width="75%" height="75%">
       - We are going to build this table in the following step
      ### AWS Dynamodb (Database)
       1. Navigate to AWS Dynamodb and make a new Table label: User
@@ -439,7 +439,7 @@ Please follow these sequence of instructions in **order** by clicking on the col
      14. VNC or SSH into the pi and run the file ```Smart-doorlock/main.py``` in the terminal
      15. Congrats! You have just join the advanced smart security system club. No more bursting into your room!
    </details>
-        &nbsp;&nbsp;&nbsp; <img src="Images\Brands\Wrench.png" width="20%" height="20%">
+        &nbsp;&nbsp;&nbsp; <img src="media\Images\Brands\Wrench.png" width="20%" height="20%">
 
 ## Cloud Architecture
 
