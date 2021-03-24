@@ -479,13 +479,17 @@ You can download/enlarge the image by clicking on it.
 
 ### File Struture Directory
 ```
-Smart-Doorlock
-├───cal
-│   └───__pycache__
-├───Components
-│   ├───Cred
-│   │   ├───Lock_smart
-│   │   └───Override
+wfh-security-system (root)
+├───cad
+│   ├───Back
+│   │   └───Mk3s
+│   └───Front_IO
+│       └───Mk3s
+├───electrical
+│   └───Images
+├───libs
+│   ├───creds
+│   ├───custom
 │   ├───phue
 │   ├───pyfingerprint
 │   │   ├───doc
@@ -496,22 +500,38 @@ Smart-Doorlock
 │   │           ├───examples
 │   │           └───pyfingerprint
 │   └───raspberrypi-lcd
-├───e-mail
-│   └───__pycache__
-├───Electrical
+├───media
+│   ├───Gif
 │   └───Images
-├───Images
-│   └───Diagrams
-│       ├───Cloud
-│       │   ├───Final
-│       │   └───Icons
-│       ├───FlowChart
-│       └───State_Diagram
-├───Src
-├───table
-│   └───.vscode
-└───Test
-    └───__pycache__
+│       ├───Brands
+│       ├───CAD
+│       │   ├───Back
+│       │   └───Front
+│       ├───Diagrams
+│       │   ├───Cloud
+│       │   │   ├───Final
+│       │   │   └───Icons
+│       │   ├───Fingerprint
+│       │   ├───FlowChart
+│       │   └───State_Diagram
+│       └───Screenshots
+├───requirements
+├───src
+└───test
+    ├───Button
+    ├───Buzzer
+    ├───Calendar
+    ├───Combine
+    ├───DB
+    ├───E-mail
+    ├───Lcd
+    ├───Led
+    ├───Main
+    ├───Pir
+    ├───Pubsub
+    ├───Reed
+    ├───relay_lock
+    └───Scrap
 ```
 
 ### Custom Libraries
