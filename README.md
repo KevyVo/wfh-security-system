@@ -1,4 +1,4 @@
-# Smart-Doorlock Documentation
+# Work From Home Security System Documentation
 
 ## Summary
 Due to COVID-19, in early spring my internship was forced to transition into a remote and virtual experience. Whenever I had a meeting, my housemates would find ways to disturb me, whether by knocking loudly, or by walking in unannounced. I searched everywhere for a smartlock that would be able to alert people outside that I was in a meeting. Unfortunately, I could not find anything that fit all my needs. Fortunately, being the engineering student I am, I knew what I had to do. It was time to bring this idea into existince and build it myself. 
