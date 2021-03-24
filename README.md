@@ -37,9 +37,9 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Override Trigger
      1. In the gif the main.py file is waiting for a trigger when the user want to diable the alarm system.
-        - ![unlock](media\Gif\unlock_override.gif)
+        - ![unlock](media/Gif/unlock_override.gif)
      2. In the gif the main.py file is waiting for a trigger when the user want to arm the alarm system.
-        - ![lock](media\Gif\lock_overide.gif)
+        - ![lock](media/Gif/lock_overide.gif)
    </details>
 
 2.  Live updates from serverless site</br><details> 
@@ -47,7 +47,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Live update
      - Will update all information relating to the last or cuurent state of the door, either by moblie browser or web browser.
-       - ![web](media\Gif\site.gif)
+       - ![web](media/Gif/site.gif)
        - <img src="Gif/mobilesite.gif" width="38%" height="38%">
    </details>
 
@@ -56,7 +56,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Google Calendar
      - This will read continously from your google work calendar and alert other outside your door not to distrub during these hours.
-       - ![google](media\Gif\calender2.gif)
+       - ![google](media/Gif/calender2.gif)
    </details>
 
 4.  Autonomous Motion Light/System Sensor</br><details> 
@@ -64,7 +64,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Light/System Sensor
      - The light and security system will turn on with motion and turn off after 5 mins of no activity. The sensor will work in the darkest condtions.
-       - ![dark](media\Gif\dark2.gif)
+       - ![dark](media/Gif/dark2.gif)
    </details>
 
 5.  Biometric Authentication</br><details> 
@@ -73,9 +73,9 @@ My work from home security system, aid in alot more ways then just a smart door 
      ### Fingerprint Scanner
      - Authenticate authorize user to gain access to the room with their pre-regsiter fingerprint, the light will also blink a certain colour depending on the assessment. It will also save any fail fingerprint on local storage for identifying potential unauthorized events.
        - Correct Fingerprint (Blink Green)
-       - ![correct](media\Gif\correct.gif)
+       - ![correct](media/Gif/correct.gif)
        - Incorrect Fingerprint (Blink Red)
-       - ![Incorrect](media\Gif\incorrect.gif)
+       - ![Incorrect](media/Gif/incorrect.gif)
    </details>
 
 6.  Excceded Timeout</br><details> 
@@ -83,7 +83,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Timeout
      - Will set a timeout of 5 mins after 3 continous authenication failures, every addtion failure will be (timeout= tries * 5 mins). This will reset after one correct authernication. It will also save any fail fingerprint on local storage for identifying potential unauthorized events.
-       - ![timeout](media\Gif\timeout.gif)
+       - ![timeout](media/Gif/timeout.gif)
    </details>
 
 7.  Forced Entry Detection</br><details> 
@@ -91,7 +91,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Forced Entry Detection
      - Will sound an alarm once the door is open with any proper autheication or break in. The alarm will only turn off once a authenticated fingerprint has reset the alarm.
-       - ![fsd](media\Gif\fed.gif)
+       - ![fsd](media/Gif/fed.gif)
    </details>
 
 8.  E-mail alerts</br><details> 
@@ -100,11 +100,11 @@ My work from home security system, aid in alot more ways then just a smart door 
      ### Alerts
      - There are 3 events that will send e-mails on
       1. Force Entry Dectection Triggered
-          + ![force](media\Images\Screenshots\Force.PNG)
+          + ![force](media/Images/Screenshots/Force.PNG)
       2. Correct fingerprint to deactivate the alarm
-          + ![reset](media\Images\Screenshots\Reset.PNG)
+          + ![reset](media/Images/Screenshots/Reset.PNG)
       3. Fail fingerprint with the fail printed attached to e-mail (In real e-mail the fingerprint would not be blurred)
-          + ![fail](media\Images\Screenshots\Failed.PNG)
+          + ![fail](media/Images/Screenshots/Failed.PNG)
    </details>
 
 9.  Logging events into database</br><details> 
@@ -120,7 +120,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      
      ### Logging
      - Red and Green light will blink simultaneously if there is motion on the other side of the door.
-       - ![motiond](media\Gif\omotion.gif)
+       - ![motiond](media/Gif/omotion.gif)
    </details>
 
 11.  Daytime/Nightime Mode</br><details> 
@@ -129,7 +129,7 @@ My work from home security system, aid in alot more ways then just a smart door 
      ### Sound Change
      1.  8AM - 8PM the alarm buzzer will make sound when in use
      2.  8PM - 8AM the alarm buzzer will be disable for nightime use
-         - ![dn](media\Images\Daynight.png)
+         - ![dn](media/Images/Daynight.png)
    </details>
 
 ## Installation/Instructions
