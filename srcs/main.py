@@ -13,13 +13,13 @@ import logging
 import time
 from pyfingerprint.pyfingerprint import PyFingerprint
 import RPi.GPIO as GPIO
-import lcd_lib
-import lock_lib
-import db_lib
-import awsIOT_lib
-import awsIOT_sub
-import GCAL_lib
-import mail_lib
+from libs.custom.lcd_lib import lcd
+from libs.custom.lock_lib import lock
+from libs.custom.db_lib import db
+from libs.custom.awsIOT_lib import awsIOT
+from libs.custom.awsIOT_sub import awsIOT_subscribe
+from libs.custom.GCAL_lib import Gcal
+from libs.custom.mail_lib import mail
 
 #Logging enable
 logging.basicConfig()
