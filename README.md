@@ -846,5 +846,5 @@ If you like to buy some of these items please consider helping support me by buy
 
 ## Troubleshooting and Common Problems
  
- blah blah blah
- ur fuked
+ blah blah blah :)
+ 
